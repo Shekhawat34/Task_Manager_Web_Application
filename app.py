@@ -44,6 +44,7 @@ def success(task_id):
     return render_template('success.html', task=task)
 
 @app.route('/complete/<int:task_id>')
+
 def complete_task(task_id):
     """Mark a task as completed"""
     for task in tasks:
