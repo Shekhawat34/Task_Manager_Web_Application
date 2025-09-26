@@ -149,6 +149,7 @@ $(document).ready(function() {
         $(this).attr('data-bs-toggle', 'tooltip');
     });
     
+    
     // Initialize Bootstrap tooltips if available
     if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
         const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
