@@ -95,6 +95,7 @@ $(document).ready(function() {
         const redirectMessage = $('<p class="text-muted mt-3 redirect-timer">Redirecting to task list in <strong>' + countdown + '</strong> seconds...</p>');
         $('.success-card .card-body').append(redirectMessage);
         
+        
         const countdownInterval = setInterval(function() {
             countdown--;
             $('.redirect-timer strong').text(countdown);
@@ -149,7 +150,7 @@ $(document).ready(function() {
         $(this).attr('data-bs-toggle', 'tooltip');
     });
     
-    
+
     // Initialize Bootstrap tooltips if available
     if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
         const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
