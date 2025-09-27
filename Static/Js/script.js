@@ -96,6 +96,7 @@ $(document).ready(function() {
         const redirectMessage = $('<p class="text-muted mt-3 redirect-timer">Redirecting to task list in <strong>' + countdown + '</strong> seconds...</p>');
         $('.success-card .card-body').append(redirectMessage);
         
+        
 
         const countdownInterval = setInterval(function() {
             countdown--;
