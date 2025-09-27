@@ -63,6 +63,7 @@ $(document).ready(function() {
         clearTimeout(searchTimeout);
         const searchTerm = $(this).val().toLowerCase();
         
+    
         searchTimeout = setTimeout(function() {
             $('.task-item').each(function() {
                 const taskTitle = $(this).find('.task-title').text().toLowerCase();
@@ -95,7 +96,7 @@ $(document).ready(function() {
         const redirectMessage = $('<p class="text-muted mt-3 redirect-timer">Redirecting to task list in <strong>' + countdown + '</strong> seconds...</p>');
         $('.success-card .card-body').append(redirectMessage);
         
-        
+
         const countdownInterval = setInterval(function() {
             countdown--;
             $('.redirect-timer strong').text(countdown);
